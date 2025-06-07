@@ -13,6 +13,8 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     }
   },
-  // La section modules peut être vide ou omise
-  modules: {}
+  modules: {
+    stockLocationService: false,
+    inventoryService: false
+  }
 })
